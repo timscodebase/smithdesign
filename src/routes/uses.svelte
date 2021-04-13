@@ -6,5 +6,5 @@
 	<title>SmithDesign</title>
 </svelte:head>
 
-<h1>Home</h1>
+<h1>Uses</h1>
 
