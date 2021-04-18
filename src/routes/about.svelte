@@ -1,9 +1,5 @@
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
-	<title>SmithDesign</title>
+	<title>SmithDesign : About</title>
 </svelte:head>
 
 <h1>About Me</h1>
