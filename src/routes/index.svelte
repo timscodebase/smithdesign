@@ -26,8 +26,12 @@
 	.hero-wrapper {
 		position: relative;
 		margin: 0 auto;
-		width: 1200px;
 		height: 70vh;
+		width: 800px;
+	}
+
+	.hero-wrapper:hover > .fly-in {
+		transform: skewY(0);
 	}
 
 	.fly-in {
@@ -41,7 +45,7 @@
 
 	.from-left {
 		top: 100px;
-		right: 490px;
+		right: 90px;
 		transition: all 1.2s ease;
 	}
 	.from-left.out{
@@ -52,7 +56,7 @@
 
 	.from-right {
 		top: 260px;
-		left: 385px;
+		left: 150px;
 		transition: all 1.2s ease; 
 	}
 	.from-right.out {
