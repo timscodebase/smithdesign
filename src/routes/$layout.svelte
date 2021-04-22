@@ -66,6 +66,7 @@
 	}
 
 	main {
+		position: relative;
 		flex: 1 1 600px;
 	}
 
