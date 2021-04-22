@@ -1,13 +1,20 @@
 <script>
+  import { onDestroy } from 'svelte';
+  import { page } from '$app/stores';
+
+  let currentPage = $page;
+	console.log(currentPage.path);
+  
   import Logo from "$lib/Logo.svelte";
 </script>
 <header>
   <Logo />
   <nav>
-    <a href="/">Home</a>
-    <a href="/contact">Contact</a>
-    <a href="/about">About</a>
-    <a href="/uses">Uses</a>
+    <a class={currentPage.path === "/" ? "current" : ""} href="/">Home</a>
+    <a class={currentPage.path === "/contact" ? "current" : ""} href="/contact">Contact</a>
+    <a class={currentPage.path === "/about" ? "current" : ""} href="/about">About</a>
+    <a class={currentPage.path === "/uses" ? "current" : ""} href="/uses">Uses</a>
+    <a class={currentPage.path === "/settings" ? "current" : ""} href="/settings">Settings</a>
   </nav>
 </header>
 
@@ -23,7 +30,6 @@
   header nav {
     display: flex;
     margin-left: auto;
-    padding-right: 1rem;
     background: var(--secondary-color);
   }
 
@@ -37,12 +43,12 @@
     align-items: center;
     text-decoration: none;
     color: var(--primary-color);
-    transition: all 0.25s ease;
   }
-  header nav a:hover {
-    position: relative;
-    box-shadow: var(--bs);
-    transform: scale(1.2);
+  header nav a:hover{
+    border-bottom: 2px solid var(--primary-color)
+  }
+  .current {
+    border-top: 5px solid var(--primary-color)
   }
 
   @media(max-width: 750px) {

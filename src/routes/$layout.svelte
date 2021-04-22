@@ -1,17 +1,57 @@
 <script>
 	import Header from '$lib/Header.svelte'
 	import '../app.css';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+	let currentPage = $page;
+
+	onMount(() => {
+		let primaryColor, secondaryColor, h1Color
+		
+		// Get LocalStorage
+		primaryColor = localStorage.getItem("primary-color");
+		secondaryColor = localStorage.getItem("secondary-color");
+		h1Color = localStorage.getItem("h1-color");
+		console.log(localStorage.getItem("primary-color"));
+
+		// Set body root variables
+		if (primaryColor === null || secondaryColor === null || h1Color === null) {
+			console.log("YA");
+			document.body.style.setProperty("--primary-color", '#f00')
+			document.body.style.setProperty("--secondary-color", '#fff')
+			document.body.style.setProperty("--h1-color", '#222')
+		} else {
+			console.log("else");
+			console.log(primaryColor)
+			console.log(secondaryColor)
+			console.log(h1Color)
+			document.body.style.setProperty("--primary-color", primaryColor)
+			document.body.style.setProperty("--secondary-color", secondaryColor)
+			document.body.style.setProperty("--h1-color", h1Color)
+		}
+		
+	})
 </script>
 
 <Header />
+{#if currentPage.path !== '/'}
+	<div class="content-wrapper">
+		<main>
+			<slot />
+		</main>
+		<aside>
+			stuff
+		</aside>
+	</div>
+{:else}
 <div class="content-wrapper">
 	<main>
 		<slot />
 	</main>
-	<aside>
-		stuff
-	</aside>
 </div>
+{/if}
+
 
 <style>
 	.content-wrapper {
