@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: smithdesign.tech
+Token: 82c2b38e3898b73fdd21cb7eb4e222ab1f016e7f46e25dc2e529b90998d85132
