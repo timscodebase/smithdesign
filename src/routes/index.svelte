@@ -31,19 +31,19 @@
 
 	.from-left {
 		top: 20%;
-		left: 0px;
+		right: 260px;
 		transition: all 1.2s ease;
 	}
 	.from-left.out{
-		left: -730px;
+		right: -700px;
 	}
 
 	.from-right {
 		top: 40%;
-		right: 0px;
+		left: 300px;
 		transition: all 1.2s ease; 
 	}
 	.from-right.out {
-		right: -630px;
+		left: -650px;
 	}
 </style>
