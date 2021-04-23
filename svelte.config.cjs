@@ -9,6 +9,15 @@ module.exports = {
 
     target: "#svelte",
 
+    files: {
+			assets: 'static',
+			hooks: 'src/hooks',
+			lib: 'src/lib',
+			routes: 'src/routes',
+			serviceWorker: 'src/service-worker',
+			template: 'src/app.html'
+		},
+
     vite: {
       ssr: {
         noExternal: Object.keys(pkg.dependencies || {}),

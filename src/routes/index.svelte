@@ -26,8 +26,11 @@
 	.hero-wrapper {
 		position: relative;
 		margin: 0 auto;
-		height: 70vh;
-		width: 800px;
+		height: 445px;
+		width: 840px;
+		border: 4px solid var(--primary-color);
+		border-radius: 20px;
+		overflow: hidden;
 	}
 
 	.hero-wrapper:hover > .fly-in {
@@ -44,7 +47,7 @@
 	}
 
 	.from-left {
-		top: 100px;
+		top: 50px;
 		right: 90px;
 		transition: all 1.2s ease;
 	}
@@ -55,7 +58,7 @@
 	}
 
 	.from-right {
-		top: 260px;
+		top: 210px;
 		left: 150px;
 		transition: all 1.2s ease; 
 	}
