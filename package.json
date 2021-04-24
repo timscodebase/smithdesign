@@ -12,10 +12,22 @@
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
+		"babel-eslint": "^10.1.0",
+		"eslint": "^7.25.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-config-wesbos": "^1.0.1",
+		"eslint-plugin-html": "^6.1.2",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.23.2",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"gsap": "^3.6.1",
 		"node-fetch": "^2.6.1",
+		"prettier": "^2.2.1",
 		"svelte": "^3.29.0",
-		"vite": "^2.1.0",
-		"web-vitals": "^1.1.1"
+		"vite": "^2.1.0"
 	},
 	"type": "module"
 }

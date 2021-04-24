@@ -10,11 +10,11 @@
 <header>
   <Logo />
   <nav>
-    <a class={currentPage.path === "/" ? "current" : ""} href="/">Home</a>
-    <a class={currentPage.path === "/contact" ? "current" : ""} href="/contact">Contact</a>
-    <a class={currentPage.path === "/about" ? "current" : ""} href="/about">About</a>
-    <a class={currentPage.path === "/uses" ? "current" : ""} href="/uses">Uses</a>
-    <a class={currentPage.path === "/settings" ? "current" : ""} href="/settings">Settings</a>
+    <a sveltekit:prefetch class={currentPage.path === "/" ? "current" : ""} href="/">Home</a>
+    <a sveltekit:prefetch class={currentPage.path === "/contact" ? "current" : ""} href="/contact">Contact</a>
+    <a sveltekit:prefetch class={currentPage.path === "/about" ? "current" : ""} href="/about">About</a>
+    <a sveltekit:prefetch class={currentPage.path === "/uses" ? "current" : ""} href="/uses">Uses</a>
+    <a sveltekit:prefetch class={currentPage.path === "/settings" ? "current" : ""} href="/settings">Settings</a>
   </nav>
 </header>
 
