@@ -217,7 +217,7 @@
 	// 		document.body.style.setProperty("--h1-color", h1Color)
 	// 	}
 		
-	// })
+	})
 </script>
 
 {#if currentPage.path !== '/'}
