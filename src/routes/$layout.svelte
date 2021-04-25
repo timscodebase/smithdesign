@@ -192,32 +192,32 @@
 				intro.start();
 		});
 
-		//! ==================================
-		let primaryColor, secondaryColor, h1Color
+	// 	//! ==================================
+	// 	let primaryColor, secondaryColor, h1Color
 		
-		// Get LocalStorage
-		primaryColor = localStorage.getItem("primary-color");
-		secondaryColor = localStorage.getItem("secondary-color");
-		h1Color = localStorage.getItem("h1-color");
-		console.log(localStorage.getItem("primary-color"));
+	// 	// Get LocalStorage
+	// 	primaryColor = localStorage.getItem("primary-color");
+	// 	secondaryColor = localStorage.getItem("secondary-color");
+	// 	h1Color = localStorage.getItem("h1-color");
+	// 	console.log(localStorage.getItem("primary-color"));
 
-		// Set body root variables
-		if (primaryColor === null || secondaryColor === null || h1Color === null) {
-			console.log("YA");
-			document.body.style.setProperty("--primary-color", '#f00')
-			document.body.style.setProperty("--secondary-color", '#fff')
-			document.body.style.setProperty("--h1-color", '#222')
-		} else {
-			console.log("else");
-			console.log(primaryColor)
-			console.log(secondaryColor)
-			console.log(h1Color)
-			document.body.style.setProperty("--primary-color", primaryColor)
-			document.body.style.setProperty("--secondary-color", secondaryColor)
-			document.body.style.setProperty("--h1-color", h1Color)
-		}
+	// 	// Set body root variables
+	// 	if (primaryColor === null || secondaryColor === null || h1Color === null) {
+	// 		console.log("YA");
+	// 		document.body.style.setProperty("--primary-color", '#f00')
+	// 		document.body.style.setProperty("--secondary-color", '#fff')
+	// 		document.body.style.setProperty("--h1-color", '#222')
+	// 	} else {
+	// 		console.log("else");
+	// 		console.log(primaryColor)
+	// 		console.log(secondaryColor)
+	// 		console.log(h1Color)
+	// 		document.body.style.setProperty("--primary-color", primaryColor)
+	// 		document.body.style.setProperty("--secondary-color", secondaryColor)
+	// 		document.body.style.setProperty("--h1-color", h1Color)
+	// 	}
 		
-	})
+	// })
 </script>
 
 {#if currentPage.path !== '/'}
