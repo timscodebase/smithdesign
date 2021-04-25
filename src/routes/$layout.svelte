@@ -1,4 +1,5 @@
 <script>
+	import themeSwitcher from '$lib/themeSwitcher'
 	import Header from '$lib/Header.svelte'
 	import '../app.css';
 	import '../intro.css';
@@ -20,17 +21,13 @@
 		// Set body root variables
 		if (primaryColor === null || secondaryColor === null || h1Color === null) {
 			console.log("YA");
-			document.body.style.setProperty("--primary-color", "#f00")
-			document.body.style.setProperty("--secondary-color", "#fff")
-			document.body.style.setProperty("--h1-color", "#222")
+			themeSwitcher("#f00", "#fff", "#222")
 		} else {
 			console.log("else");
 			console.log(primaryColor)
 			console.log(secondaryColor)
 			console.log(h1Color)
-			document.body.style.setProperty("--primary-color", primaryColor)
-			document.body.style.setProperty("--secondary-color", secondaryColor)
-			document.body.style.setProperty("--h1-color", h1Color)
+			themeSwitcher(primaryColor, secondaryColor, h1Color)
 		}
 
 		//! ==================================
