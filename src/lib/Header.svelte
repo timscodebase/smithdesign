@@ -24,13 +24,13 @@
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color, #f00);
   }
 
   header nav {
     display: flex;
     margin-left: auto;
-    background: var(--secondary-color);
+    background: var(--secondary-color, #f00);
   }
 
   header nav a {
@@ -42,19 +42,19 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color, #f00);
   }
   header nav a:hover{
-    border-bottom: 2px solid var(--primary-color)
+    border-bottom: 2px solid var(--primary-color, #f00)
   }
   .current {
-    border-top: 5px solid var(--primary-color)
+    border-top: 5px solid var(--primary-color, #f00)
   }
 
   @media(max-width: 750px) {
     header {
       justify-content: center;
-      background: var(--primary-color);
+      background: var(--primary-color, #f00);
     }
 
     header nav {

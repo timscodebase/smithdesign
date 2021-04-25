@@ -1,7 +1,7 @@
 :root {
 	--color-text: #292725;
 	--color-bg: #fff;
-	--color-link: #a99c90;
+	/* --color-link: #a99c90; */
 	--color-link-hover: #292725;
 	--color-font-circle: var(--color-bg);
 	--color-button: #f00;
@@ -15,12 +15,7 @@
 	--font-weight-circle-3: 400;
 	--font-circle-4: niagara, sans-serif;
 	--font-weight-circle-4: 300;
-
-	margin: 0;
 	--dim-button: 28vh;
-	color: var(--color-text);
-	background-color: transparent;
-	font-family: tenon, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

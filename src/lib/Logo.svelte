@@ -61,7 +61,7 @@
   .logo {
     width: 300px;
     padding: 1.5rem 2rem;
-    background: var(--primary-color);
+    background: var(--primary-color, #f00);
     overflow: hidden;
   }
 
@@ -74,7 +74,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--secondary-color);
+    color: var(--secondary-color, #fff);
     /* transition: all 0.25s ease-in-out; */
   }
 

@@ -28,7 +28,7 @@
 		margin: 0 auto;
 		height: 445px;
 		width: 840px;
-		border: 4px solid var(--primary-color);
+		border: 4px solid var(--primary-color, #f00);
 		border-radius: 20px;
 		overflow: hidden;
 	}

@@ -10,6 +10,31 @@
 	let currentPage = $page;
 
 	onMount(() => {
+		let primaryColor, secondaryColor, h1Color
+
+		// Get LocalStorage
+		primaryColor = localStorage.getItem("primary-color");
+		secondaryColor = localStorage.getItem("secondary-color");
+		h1Color = localStorage.getItem("h1-color");
+
+		// Set body root variables
+		if (primaryColor === null || secondaryColor === null || h1Color === null) {
+			console.log("YA");
+			document.body.style.setProperty("--primary-color", "#f00")
+			document.body.style.setProperty("--secondary-color", "#fff")
+			document.body.style.setProperty("--h1-color", "#222")
+		} else {
+			console.log("else");
+			console.log(primaryColor)
+			console.log(secondaryColor)
+			console.log(h1Color)
+			document.body.style.setProperty("--primary-color", primaryColor)
+			document.body.style.setProperty("--secondary-color", secondaryColor)
+			document.body.style.setProperty("--h1-color", h1Color)
+		}
+
+		//! ==================================
+		
 		const DOM = {
 			header: document.querySelector('.header'),
 			frame: document.querySelector('.frame'),
@@ -191,32 +216,6 @@
 				document.body.classList.remove('loading');
 				intro.start();
 		});
-
-	// 	//! ==================================
-	// 	let primaryColor, secondaryColor, h1Color
-		
-	// 	// Get LocalStorage
-	// 	primaryColor = localStorage.getItem("primary-color");
-	// 	secondaryColor = localStorage.getItem("secondary-color");
-	// 	h1Color = localStorage.getItem("h1-color");
-	// 	console.log(localStorage.getItem("primary-color"));
-
-	// 	// Set body root variables
-	// 	if (primaryColor === null || secondaryColor === null || h1Color === null) {
-	// 		console.log("YA");
-	// 		document.body.style.setProperty("--primary-color", '#f00')
-	// 		document.body.style.setProperty("--secondary-color", '#fff')
-	// 		document.body.style.setProperty("--h1-color", '#222')
-	// 	} else {
-	// 		console.log("else");
-	// 		console.log(primaryColor)
-	// 		console.log(secondaryColor)
-	// 		console.log(h1Color)
-	// 		document.body.style.setProperty("--primary-color", primaryColor)
-	// 		document.body.style.setProperty("--secondary-color", secondaryColor)
-	// 		document.body.style.setProperty("--h1-color", h1Color)
-	// 	}
-		
 	})
 </script>
 
@@ -299,7 +298,7 @@
 
 	aside {
 		flex: 1 1 300px;
-		color: var(--secondary-color);
-		background: var(--primary-color)
+		color: var(--secondary-color, #fff);
+		background: var(--primary-color, #f00)
 	}
 </style>
