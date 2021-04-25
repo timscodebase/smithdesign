@@ -178,6 +178,7 @@
 						'start+=1'
 					);
 					
+				sessionStorage.setItem('intro_shown', true);
 				themeSwitcher("#be0000", "#f5e6db", "#222")
 				// if (primaryColor === null || secondaryColor === null || h1Color === null) {
 				// 	alert("YA");
@@ -190,12 +191,26 @@
 
 		}
 
-		const intro = new Intro(document.querySelector('.circles'));
+		const intro_shown = sessionStorage.getItem('intro_shown');
 
-		Promise.all([preloadFonts('kxo3pgz')]).then(() => {
+		if (intro_shown) {	
+			const content = document.querySelector('.content')
+			const enter = document.querySelector('.enter')
+			const enterBg = document.querySelector('.enter__bg')
+			const circle = document.querySelector('.circles')
+
+			enter.style.opacity = 0
+			enterBg.style.opacity = 0
+			circle.style.opacity = 0
+			content.style.opacity = 1
+		} else {
+			const intro = new Intro(document.querySelector('.circles'))
+
+			Promise.all([preloadFonts('kxo3pgz')]).then(() => {
 				document.body.classList.remove('loading');
 				intro.start();
 		});
+		}
 	})
 </script>
 
