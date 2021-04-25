@@ -14,21 +14,10 @@
 		let primaryColor, secondaryColor, h1Color
 
 		// Get LocalStorage
-		primaryColor = localStorage.getItem("primary-color");
-		secondaryColor = localStorage.getItem("secondary-color");
-		h1Color = localStorage.getItem("h1-color");
-
-		// Set body root variables
-		if (primaryColor === null || secondaryColor === null || h1Color === null) {
-			console.log("YA");
-			themeSwitcher("#f00", "#fff", "#222")
-		} else {
-			console.log("else");
-			console.log(primaryColor)
-			console.log(secondaryColor)
-			console.log(h1Color)
-			themeSwitcher(primaryColor, secondaryColor, h1Color)
-		}
+		primaryColor = localStorage.getItem("primary-color")
+		secondaryColor = localStorage.getItem("secondary-color")
+		h1Color = localStorage.getItem("h1-color")
+		
 
 		//! ==================================
 		
@@ -204,7 +193,17 @@
 						},
 						'start+=1'
 					);
+					
+				themeSwitcher("#f00", "#fff", "#222")
+				// if (primaryColor === null || secondaryColor === null || h1Color === null) {
+				// 	alert("YA");
+				// 	themeSwitcher("#f00", "#fff", "#222")
+				// } else {
+				// 	alert("else", primaryColor, secondaryColor, h1Color)
+				// 	themeSwitcher(primaryColor, secondaryColor, h1Color)
+				// }
 			}
+
 		}
 
 		const intro = new Intro(document.querySelector('.circles'));
@@ -240,7 +239,7 @@
 					<path id="circle-4" d="M567.5,700.5A133,133 0 1 1833.5,700.5A133,133 0 1 1567.5,700.5" />
 				</def>
 				<text class="circles__text circles__text--1">
-					<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">Worldclass Web Development&nbsp;</textPath>
+					<textPath class="circles__text-path" xlink:href="#circle-1" aria-label="" textLength="2830">&nbsp;SmithDesign&nbsp;|&nbsp;SmithDesign&nbsp;|</textPath>
 				</text>
 				<text class="circles__text circles__text--2">
 					<textPath class="circles__text-path" xlink:href="#circle-2" aria-label="" textLength="2001">Worldclass Web Design&nbsp;</textPath>
