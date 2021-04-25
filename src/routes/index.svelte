@@ -5,7 +5,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import themeSwitcher from '$lib/themeSwitcher'
-	import { gsap } from 'gsap';
+	import gsap from 'gsap';
 	import { preloadFonts } from '$lib/utils';
 
 	onMount(() => {
