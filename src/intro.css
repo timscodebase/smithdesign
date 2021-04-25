@@ -4,7 +4,7 @@
 	/* --color-link: #a99c90; */
 	--color-link-hover: #292725;
 	--color-font-circle: var(--color-bg);
-	--color-button: #f00;
+	--color-button: #be0000;
 	--color-text-button: var(--color-bg);
 	--color-text-circle-4: #be0000;
 	--color-text-circle-1: #be0000;
@@ -130,6 +130,7 @@ a:focus-visible {
 }
 
 .enter {
+	z-index: 999;
 	display: block;
 	border: 0;
 	width: var(--dim-button);
@@ -171,15 +172,6 @@ a:focus-visible {
 }
 
 .content {
-	display: flex;
-	flex-direction: column;
-	width: 100vw;
-	padding: 2rem;
-	height: calc(100vh - 13rem);
-	position: relative;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
 }
 
 .js .content {

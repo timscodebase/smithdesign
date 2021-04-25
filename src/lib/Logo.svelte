@@ -61,7 +61,7 @@
   .logo {
     width: 300px;
     padding: 1.5rem 2rem;
-    background: var(--primary-color, #f00);
+    background: var(--primary-color, #be0000);
     overflow: hidden;
   }
 

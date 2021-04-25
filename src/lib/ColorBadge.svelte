@@ -22,7 +22,7 @@
 <style>
   .badge {
     padding: 2rem;
-    border: 2px solid var(--primary-color, #f00);
+    border: 2px solid var(--primary-color, #be0000);
   }
 
   .color-square {
@@ -52,7 +52,7 @@
   }
 
   button {
-    background: var(--primary-color, #f00);
+    background: var(--primary-color, #be0000);
     color: #fff;
     padding: 1rem 2rem;
     margin: 1rem auto;

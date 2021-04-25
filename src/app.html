@@ -9,9 +9,22 @@
 		<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
-		document.documentElement.className = "js";
-		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
-		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+		document.documentElement.className = 'js';
+		const supportsCssVars = function () {
+  let e;
+  const t = document.createElement('style');
+  return (
+    (t.innerHTML = 'root: { --tmp-var: bold; }'),
+    document.head.appendChild(t),
+    (e = !!(
+      window.CSS &&
+      window.CSS.supports &&
+      window.CSS.supports('font-weight', 'var(--tmp-var)')
+    )),
+    t.parentNode.removeChild(t),
+    e
+  );
+};
 		</script>
 		%svelte.head%
 	</head>
@@ -22,29 +35,27 @@
 		<meta name="author" content="Tim Smith">
 		
 		<script>
-			let primaryColor, secondaryColor, h1Color
-		
-			// Get LocalStorage
-			primaryColor = localStorage.getItem("primary-color");
-			secondaryColor = localStorage.getItem("secondary-color");
-			h1Color = localStorage.getItem("h1-color");
-			console.log(localStorage.getItem("primary-color"));
+		// Get LocalStorage
+		const primaryColor = localStorage.getItem('primary-color');
+		const secondaryColor = localStorage.getItem('secondary-color');
+		const h1Color = localStorage.getItem('h1-color');
+		console.log(localStorage.getItem('primary-color'));
 
-			// Set body root variables
-			if (primaryColor === null || secondaryColor === null || h1Color === null) {
-				console.log("YA");
-				document.body.style.setProperty("--primary-color", '#f00')
-				document.body.style.setProperty("--secondary-color", '#fff')
-				document.body.style.setProperty("--h1-color", '#222')
-			} else {
-				console.log("else");
-				console.log(primaryColor)
-				console.log(secondaryColor)
-				console.log(h1Color)
-				document.body.style.setProperty("--primary-color", primaryColor)
-				document.body.style.setProperty("--secondary-color", secondaryColor)
-				document.body.style.setProperty("--h1-color", h1Color)
-			}
+		// Set body root variables
+		if (primaryColor === null || secondaryColor === null || h1Color === null) {
+		  console.log('YA');
+		  document.body.style.setProperty('--primary-color', '#be0000');
+		  document.body.style.setProperty('--secondary-color', '#fff');
+		  document.body.style.setProperty('--h1-color', '#222');
+		} else {
+		  console.log('else');
+		  console.log(primaryColor);
+		  console.log(secondaryColor);
+		  console.log(h1Color);
+		  document.body.style.setProperty('--primary-color', primaryColor);
+		  document.body.style.setProperty('--secondary-color', secondaryColor);
+		  document.body.style.setProperty('--h1-color', h1Color);
+		}
 		</script>
 	</body>
 </html>

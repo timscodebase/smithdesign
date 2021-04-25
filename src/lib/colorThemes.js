@@ -1,6 +1,6 @@
 const colorThemes = [
   {
-    primaryColor: "#f00",
+    primaryColor: "#be0000",
     secondaryColor: "#fff",
     h1Color: "#222",
   },
