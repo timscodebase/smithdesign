@@ -1,6 +1,6 @@
 :root {
 	--color-text: #292725;
-	--color-bg: #fff;
+	--color-bg: #f5e6db;
 	/* --color-link: #a99c90; */
 	--color-link-hover: #292725;
 	--color-font-circle: var(--color-bg);
@@ -285,5 +285,15 @@ a:focus-visible {
 		height: 100vh;
 		justify-content: center;
 		text-align: left;
+	}
+}
+
+@media(max-width: 750px) {
+	:root {
+		--dim-button: 20vh;
+	}
+	
+	.circles {
+		 --dim: 290vmin;
 	}
 }

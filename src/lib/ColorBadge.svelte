@@ -53,7 +53,7 @@
 
   button {
     background: var(--primary-color, #be0000);
-    color: #fff;
+    color: #f5e6db;
     padding: 1rem 2rem;
     margin: 1rem auto;
   }

@@ -52,8 +52,8 @@ main {
 
 aside {
   flex: 1 1 300px;
-  color: var(--secondary-color, #fff);
-  background: var(--primary-color, #f00)
+  color: var(--secondary-color, #f5e6db);
+  background: var(--primary-color, #be0000)
 }
 
 nav ul {
@@ -111,7 +111,7 @@ button {
 }
 
 body {
-  background: var(--secondary-color, #f00)
+  background: var(--secondary-color, #be0000)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,7 +125,7 @@ h1 {
 	padding-right: 3rem;
 	padding-bottom: 1rem;
 	margin: 2rem 0 2rem 2rem;
-	border-bottom: 1.5rem solid var(--primary-color, #f00)
+	border-bottom: 1.5rem solid var(--primary-color, #be0000)
 }
 
 .hero-wrapper:hover ~ .fly-in {
@@ -144,23 +144,5 @@ h1 {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
 
 }

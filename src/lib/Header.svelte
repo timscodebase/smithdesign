@@ -30,6 +30,7 @@
   header nav {
     display: flex;
     margin-left: auto;
+    justify-content: space-evenly;
     background: var(--secondary-color, #be0000);
   }
 
@@ -58,7 +59,13 @@
     }
 
     header nav {
+      margin-right: 0;
+      flex-wrap: wrap;
       margin-left: initial;
+    }
+
+    header nav a {
+      height: auto;
     }
 
     header nav a:hover {

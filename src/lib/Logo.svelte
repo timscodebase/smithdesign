@@ -74,7 +74,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--secondary-color, #fff);
+    color: var(--secondary-color, #f5e6db);
     /* transition: all 0.25s ease-in-out; */
   }
 

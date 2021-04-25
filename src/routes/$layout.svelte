@@ -19,10 +19,10 @@
 
 		//! ==================================
 		
-		themeSwitcher("#be0000", "#fff", "#222")
+		themeSwitcher("#be0000", "#f5e6db", "#222")
 				// if (primaryColor === null || secondaryColor === null || h1Color === null) {
 				// 	alert("YA");
-				// 	themeSwitcher("#be0000", "#fff", "#222")
+				// 	themeSwitcher("#be0000", "#f5e6db", "#222")
 				// } else {
 				// 	alert("else", primaryColor, secondaryColor, h1Color)
 				// 	themeSwitcher(primaryColor, secondaryColor, h1Color)

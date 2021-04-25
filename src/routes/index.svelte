@@ -178,10 +178,10 @@
 						'start+=1'
 					);
 					
-				themeSwitcher("#be0000", "#fff", "#222")
+				themeSwitcher("#be0000", "#f5e6db", "#222")
 				// if (primaryColor === null || secondaryColor === null || h1Color === null) {
 				// 	alert("YA");
-				// 	themeSwitcher("#be0000", "#fff", "#222")
+				// 	themeSwitcher("#be0000", "#f5e6db", "#222")
 				// } else {
 				// 	alert("else", primaryColor, secondaryColor, h1Color)
 				// 	themeSwitcher(primaryColor, secondaryColor, h1Color)
@@ -227,11 +227,8 @@
 	<div class="content-wrapper">
 		<div class="hero-wrapper">
 			<div class="hero-text">
-				<div class="blur"></div>
-				<div class="hero-text">
-					<p>Why settle for a cookie-cuttier website that looke the same as everyother cookie-cuttier website out there?</p>
-					<p></p>
-				</div>
+				<p>Why settle for a cookie-cuttier website that looke the same as everyother cookie-cuttier website out there?</p>
+				<p>At SmithDesign we provide custom designed, custom developed websites or applications</p>
 			</div>
 		</div>
 		<main>
@@ -246,7 +243,7 @@
 <style>
 	.hero-wrapper {
 		width: 100%;
-		height: 75vh;
+		min-height: 75vh;
 		background: url('/img/hero.png');
 		background-size: cover;
 		display: grid;
@@ -255,19 +252,12 @@
 	}
 
 	.hero-text {
+		width: 50%;
+		padding: 2.5rem;
 		position: absolute;
 		display: grid;
 		place-items: center;
-	}
-
-	.blur {
-		position: absolute;
-		top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-		background: inherit;
-		backdrop-filter: blur(5px);
+		margin-right: auto;
 	}
 
 	.hero-text p {
@@ -275,11 +265,24 @@
 		background: inherit;
 		color: var(--secondary-color);
 		font-family: 'Fira Code', monospace;
+		padding-bottom: 2rem;
 	}
-
 	
 	.content {
 		height: 0;
 		opacity: 0;
+	}
+
+	@media(max-width: 750px) {
+		.hero-wrapper {
+			min-height: 40vh;
+		}
+
+		.hero-text {
+			width: 100%;
+		}
+		.hero-text p {
+			font-size: 2rem;
+		}
 	}
 </style>
