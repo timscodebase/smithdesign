@@ -209,7 +209,7 @@
 			Promise.all([preloadFonts('kxo3pgz')]).then(() => {
 				document.body.classList.remove('loading');
 				intro.start();
-		});
+			});
 		}
 	})
 </script>
@@ -242,8 +242,7 @@
 	<div class="content-wrapper">
 		<div class="hero-wrapper">
 			<div class="hero-text">
-				<p>Why settle for a cookie-cuttier website that looke the same as everyother cookie-cuttier website out there?</p>
-				<p>At SmithDesign we provide custom designed, custom developed websites or applications</p>
+				<p>Why settle for a cookie-cuttier website when you can have a beautifully handcrafted website from <span>SmithDesign</span></p>
 			</div>
 		</div>
 		<main>
@@ -276,11 +275,22 @@
 	}
 
 	.hero-text p {
-		font-size: 3rem;
+		font-size: 4.5rem;
 		background: inherit;
 		color: var(--secondary-color);
 		font-family: 'Fira Code', monospace;
 		padding-bottom: 2rem;
+	}
+
+	.hero-text p span {
+		color: var(--primary-color);
+    font-size: 7rem;
+    background: var(--secondary-color);
+    margin-top: 6rem;
+		margin-left: -3rem;
+		padding: 1rem 3rem 1rem 20rem;
+		border-radius: 0 50px 50px 0;
+    display: inline-block;
 	}
 	
 	.content {

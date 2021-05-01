@@ -27,6 +27,7 @@ time, mark, audio, video {
 
 body {
   line-height: 1;
+  background: var(--secondary-color, #f5e6db);
 }
 
 article,aside,details,figcaption,figure,

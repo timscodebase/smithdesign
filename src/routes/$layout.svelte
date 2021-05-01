@@ -6,7 +6,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
-	let currentPage = $page;
+	let thisPage = $page;
 
 	onMount(() => {
 		let primaryColor, secondaryColor, h1Color
@@ -19,18 +19,11 @@
 
 		//! ==================================
 		
-		themeSwitcher("#be0000", "#f5e6db", "#222")
-				// if (primaryColor === null || secondaryColor === null || h1Color === null) {
-				// 	alert("YA");
-				// 	themeSwitcher("#be0000", "#f5e6db", "#222")
-				// } else {
-				// 	alert("else", primaryColor, secondaryColor, h1Color)
-				// 	themeSwitcher(primaryColor, secondaryColor, h1Color)
-				// }
+		themeSwitcher("#be0000", "#fff", "#222")
 	})
 </script>
 
-{#if currentPage.path !== '/'}
+{#if thisPage.path !== '/'}
 	<Header />
 	<div class="content-wrapper">
 		<main>

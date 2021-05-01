@@ -59,10 +59,11 @@
 
 <style>
   .logo {
-    width: 300px;
-    padding: 1.5rem 2rem;
+    width: 310px;
+    padding: 1.5rem 3rem 1.5rem 2rem;
     background: var(--primary-color, #be0000);
     overflow: hidden;
+    border-radius: 0 35px 35px 0;
   }
 
   span {

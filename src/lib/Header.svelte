@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     justify-content: space-between;
-    border-bottom: 2px solid var(--primary-color, #be0000);
+    /* border-bottom: 2px solid var(--primary-color, #be0000); */
   }
 
   header nav {
